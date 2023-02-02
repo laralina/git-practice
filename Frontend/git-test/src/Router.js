@@ -1,7 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Login from "./pages/Login/";
 import Main from "./pages/Main/Main";
+
+import Login from "./pages/Login/Login";
 
 export default function Router() {
   return (
@@ -9,6 +12,8 @@ export default function Router() {
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/main' element={<Main />} />
+
+
       </Routes>
     </BrowserRouter>
   );
